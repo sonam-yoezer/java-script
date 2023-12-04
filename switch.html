@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today is</title>
+</head>
+<body>
+  <p id="date"></p>
+  <script>
+
+    let today;
+    switch(new Date().getDay()){
+      case 0:
+        today="Monday";
+        break;
+
+      case 1:
+      today="Tuesday";
+        break;
+
+      case 2:
+      today="Wednesday";
+        break;
+
+      case 3:
+      today="Thursday";
+        break;
+
+      case 4:
+      today="Friday";
+        break;
+
+      case 5:
+      today="Satuarday";
+        break;
+
+      case 6:
+      today="Sunday";
+        break;
+    }
+
+    document.getElementById("date").innerHTML="Today is "+today;
+  </script>
+</body>
+</html>

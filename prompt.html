@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="fact()">Factorial</button>
+  <button onclick="cal()">Calculator</button>
+
+  <script>
+    
+    function fact(){
+      let num = parseInt(prompt("Enter your number"));
+
+      let answer = 1;
+      for(let i=1; i<=num; i++){
+      answer*=i;
+      }
+
+      window.alert(`The factorial of ${num} : ${answer}`);
+    }
+  </script>
+</body>
+</html>
+<!-- 
+let result = 1;
+for (let i = 1; i <= number; i++) {
+  result *= i; -->

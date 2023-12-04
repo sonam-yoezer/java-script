@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<button onclick="fact()">Factorial</button>
+<button onclick="cal()">Calculator</button>
+<body>
+  <script>
+  function fact() {
+
+    let num = parseInt(prompt("Enter your number:"));
+
+    let answer = 1;
+    for(let i =1; i<=num; i++){
+      answer*=i;
+    }
+
+    alert("The factorial of "+num+ ":"+answer);
+  }
+  </script>
+  
+  <!-- Calculator -->
+
+  <script>
+
+    let loop;
+
+    do{
+      function cal(a,b){
+      let choice = parseInt(prompt("Following are the choices:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\nEnter your choices:"));
+
+      switch(choice){
+      case 1:
+        a = parseInt(prompt("Enter number 1: "));
+        b = parseInt(prompt("Enter number 2: "));
+        let sum = a+b;
+        alert("The sum of number 1 and 2 are: "+sum);
+        break;
+
+      case 2:
+        a = parseInt(prompt("Enter number 1: "));
+        b = parseInt(prompt("Enter number 2: "));
+        let sub = a-b;
+        alert("The difference of number 1 and 2 are: "+sub);
+        break;
+
+      case 3:
+        a = parseInt(prompt("Enter number 1: "));
+        b = parseInt(prompt("Enter number 2: "));
+        let mul = a*b;
+        alert("The multiplication of number 1 and 2 are: "+mul);
+        break;
+
+      case 4:
+        a = parseInt(prompt("Enter number 1: "));
+        b = parseInt(prompt("Enter number 2: "));
+        let div = a/b;
+        alert("The division of number 1 and 2 are: "+div);
+        break;
+
+      default:
+        alert("Invalid choice");
+    }
+    
+    loop = prompt("Do you want to calculate again?");
+    }
+
+    }while(loop ==='yes'); 
+   
+
+   
+
+  </script>
+</body>
+</html>
